@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+        <link rel="stylesheet" href="login_page_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Mono&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    
+    <body>
+        
+        <div id="home">
+            <button id="login-btn">Login <span style="vertical-align: bottom;" class="material-symbols-outlined">login</span></button>
+        </div>
+        
+        
+        <div class="popup">
+            <div class="login">
+                <div class="heading">
+                    <p class="text">Welcome Back!</p>
+                </div>
+                <div class="boxes">
+                    <label><span style="vertical-align: middle; display: inline-block; height: 30px;" class="material-symbols-outlined">mail</span></label>
+                    <input type="text" placeholder="Email">
+                    <label><span style="vertical-align: middle; height: 30px;" class="material-symbols-outlined">password</span></label>
+                    <input type="password" placeholder="Password">
+                    <button>Login</button>
+                    <a href="#">Forgot password?</a>
+                </div>
+                
+            </div>
+            <div class="signup">
+                <div class="heading">
+                    <p class="text">Join us!</p>
+                </div>
+                <div class="boxes">                             
+                    <label><span style="vertical-align: middle; display: inline-block; height: 30px;" class="material-symbols-outlined">person</span></label>
+                    <input type="text" placeholder="Username">
+                    <label><span style="vertical-align: middle; display: inline-block; height: 30px;" class="material-symbols-outlined">mail</span></label>
+                    <input type="text" placeholder="Email">
+                    <label><span style="vertical-align: middle; display: inline-block; height: 30px;" class="material-symbols-outlined">password</span></label>
+                    <input type="password" placeholder="Password">
+                    <button>Sign up</button>
+                    
+                </div>
+            </div>
+
+            <div class="overlay-left login-mode">
+                <p class="overlay-text">Hello,<br>Friend!</p>
+                <button id="overlay-login-btn">Log in!</button>
+            </div>
+            <div class="overlay-right login-mode">
+                <p class="overlay-text">Don't have an account?</p>
+                <button id="overlay-signup-btn">Join us!</button>
+            </div>
+        </div>
+        <script src="login_page_script.js"></script>
+    </body>
+    
+</html>

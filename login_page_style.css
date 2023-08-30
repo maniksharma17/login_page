@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+body{
+    background-repeat: no-repeat;
+    background-color:rgb(208, 221, 221);
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+#login-btn{
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 20%;
+    
+    background-color: white;
+    color: #2b3046;
+
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-width: 1px;
+    border-color: #2b3046;
+    border-style: solid;
+    
+    
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+    
+    transition: font-size 0.3s ease;
+    cursor: pointer;
+
+    border-radius: 30px;
+
+    transition: font-size 0.15s, box-shadow 0.15s, ;
+}
+
+#login-btn:hover{
+    font-size: 40px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.15);
+    background-color: #2b3046;
+    color: white;
+    border-radius: 60px;
+}
+
+label{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.popup{
+    background-color: white;
+    width: 700px;
+    min-width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: -100%;
+    opacity: 0;
+    transition: margin-top 0ms ease-in-out 5ms,
+                opacity 5ms ease-in-out 0ms,
+                transform 5ms ease-in 0ms;
+    border-radius: 15px;
+    
+    box-shadow: 15px 15px 10px rgba(8, 0, 0, 0.15);
+
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+}
+
+.popup.active{
+    margin-top: 10px;
+    opacity: 1;
+    transform: translateY(-200px);
+}
+
+.popup{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    align-items: center;
+    text-align: center;
+}
+
+.login{
+    display: grid;
+    grid-template-rows: 50px 350px;
+    row-gap: 30px;
+}
+
+.signup{
+    display: grid;
+    grid-template-rows: 50px 350px;
+    row-gap: 30px;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #2b3046;
+} 
+
+.signup .boxes input{
+    height: 25px;
+}
+
+.heading{
+    height: 50px;
+    vertical-align: top;
+}
+
+.boxes input{
+    width: 250px;
+    min-width: none;
+    display: block;
+    height: 25px;
+    margin: 10px auto;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: #2b3046;
+    border-style: solid;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.15);
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+label {
+    color: #2b3046;
+}
+
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #2b3046;
+    font-size: 18px;
+}
+
+.boxes button{
+    display: block;
+    margin: 25px auto;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 5px 12px 5px 12px;
+    background-color: white;
+    border-color: #2b3046;
+    border-width: 1px;
+    border-style: solid;
+    color: #2b3046;
+    border-radius: 45px;
+
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.15);
+    
+    transition: font-size 0.13s ease;
+    cursor: pointer;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.signup .boxes button{
+    margin-top: 30px;
+}
+
+.boxes button:hover{
+    font-size: 35px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.15);
+    color: white;
+    background-color: #2b3046;
+    border-radius: 70px;
+    
+}
+
+.overlay-right, .overlay-left{
+    background-color: #2b3046;
+    height: 450px;
+    transform: translateY(-430px);
+    border-radius: 15px;
+}
+
+.overlay-text{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#overlay-signup-btn, #overlay-login-btn{
+    margin: 24px auto;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    border: none;
+    padding: 5px 12px 5px 12px;
+    background-color: white;
+    color: #2b3046;
+    border-radius: 50px;
+
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.15);
+    
+    transition: font-size 0.15s ease;
+    cursor: pointer;
+}
+
+#overlay-signup-btn:hover{
+    font-size: 45px;
+}
+
+#overlay-login-btn:hover{
+    font-size: 45px;
+}
+
+.overlay-right{
+    transition: transform 0ms;
+}
+
+.overlay-right.signup-mode{
+    transform: translateY(-200%);
+    opacity: 0;
+}
+
+.overlay-left.signup-mode{
+    opacity: 1;
+    transform: translateY(-95.5%)
+}
+
+.overlay-left{
+    transition: opacity 0ms;
+    transform: translateY(-200%);
+    opacity: 0;
+}
+
+.overlay-left .login-mode{
+    transform: translateY(-200%);
+    opacity: 0;
+}
+
+.overlay-right .login-mode{
+    transform: translateY(-430px);
+    opacity: 1;
+}
+
+@media (max-width: 750px){
+    .popup{
+        grid-template-columns: 250px 250px;
+        width: 500px;
+        margin-top: 100px;
+    }
+    .boxes input{
+        width: 50%;
+    }
+    .overlay-text{
+        font-size: 25px;
+    }
+}
